@@ -28,4 +28,10 @@ upper_90
 
 #Calculation of the confidence interval for the average student IQ of the school
 confint90 <- c(upper_90, lower_90)
-confint90
+confint90 
+
+############
+y
+
+sample(69:126,n)
+
