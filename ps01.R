@@ -31,7 +31,17 @@ confint90 <- c(upper_90, lower_90)
 confint90 
 
 ############
-y
+#Assuming simple random sampling in the data for the problem of a discrete type (values of 50-150) with a n = 25
+#Statement of Null and Alternative Hypotheses
+x <- rnorm(50:150)
+y <- 0.05
+#Calculation of test statistic
+t.test(x, mu = sample_mean)
+#Reject the null hypothesis
 
-sample(69:126,n)
-
+###########
+#Load the data
+View(expenditure)
+head(expenditure)
+#Plot the data
+plot(expenditure$V2,expenditure$V6)
