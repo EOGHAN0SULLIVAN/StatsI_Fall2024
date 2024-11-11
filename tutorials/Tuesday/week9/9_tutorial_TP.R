@@ -25,7 +25,7 @@ pkgTest <- function(pkg){
 lapply(c("stargazer","vioplot","arm","broom","ggplot2","fastDummies"),  pkgTest)
 
 # Set working directory for current folder
-setwd("C:/Users/tpa064/Downloads")
+setwd("C:/Users/diarmuid/Documents/StatsI_Fall2024/datasets")
 getwd()
 
 # Research questions: 
@@ -87,10 +87,10 @@ typeof(df_s$edu_cat)
 df_s[(df_s == -67) | (df_s == -78) | (df_s == -89) | (df_s == 77) | (df_s == 88) | (df_s == 99) | (df_s == 999) | (df_s == 5555) | (df_s == 7777) | (df_s == 8888) | (df_s == 9999)] <- NA
 
 # Save dataset
-write.csv(df_s, "C:/Users/tpa064/Downloads/ess_euroscepticism.csv")
+write.csv(df_s, "C:/Users/diarmuid/Documents/StatsI_Fall2024/datasets/ess_euroscepticism.csv")
 
 # Initial investigation ----------
-df_s <- read.csv("C:/Users/tpa064/Downloads/ess_euroscepticism.csv", row.names="X")
+df_s <- read.csv("C:/Users/diarmuid/Documents/StatsI_Fall2024/datasets/ess_euroscepticism.csv", row.names="X")
 View(df_s)
 is.factor(df_s$edu_cat)
 
@@ -168,7 +168,7 @@ summary(model1)
 model1 <- lm(euftf_re~JuniorCycle+AdvancedCertificate+Bachelor+Postgraduate,data=df_s)
 summary(model1)
 
-# Categorical independent variable, using factor variales
+# Categorical independent variable, using factor variables
 is.factor(df_s$edu_cat)
 model1 <- lm(euftf_re~edu_cat,data=df_s)
 summary(model1)
