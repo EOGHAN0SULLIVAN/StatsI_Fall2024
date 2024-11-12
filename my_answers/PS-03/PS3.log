@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.22)  11 NOV 2024 22:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.22)  12 NOV 2024 21:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -69,6 +69,15 @@ LaTeX Warning: Label `fig:Regression statistics' multiply defined.
 
 
 LaTeX Warning: Label `fig:Scatter plot with regression line' multiply defined.
+
+
+LaTeX Warning: Label `fig:Regression statistics' multiply defined.
+
+
+LaTeX Warning: Label `fig:Scatter plot with regression line' multiply defined.
+
+
+LaTeX Warning: Label `fig:Regression stats' multiply defined.
 
 )
 \openout1 = `PS3.aux'.
@@ -173,8 +182,35 @@ File: Question3 - Scatter Plot with regression line.png Graphic file (type png)
 Package pdftex.def Info: Question3 - Scatter Plot with regression line.png  use
 d on input line 107.
 (pdftex.def)             Requested size: 310.4979pt x 244.70193pt.
- [5 <./Question3RegressionAnalysis.jpg>] [6 <./Question3 - Scatter Plot with re
-gression line.png>] (PS3.aux)
+ [5 <./Question3RegressionAnalysis.jpg>]
+<Question4RegressionAnalysis.jpg, id=32, 438.438pt x 214.401pt>
+File: Question4RegressionAnalysis.jpg Graphic file (type jpg)
+<use Question4RegressionAnalysis.jpg>
+Package pdftex.def Info: Question4RegressionAnalysis.jpg  used on input line 13
+4.
+(pdftex.def)             Requested size: 310.4979pt x 151.84627pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Question 4 - Scatter Plot with regression line.png, id=33, 429.85594pt x 338.7
+6563pt>
+File: Question 4 - Scatter Plot with regression line.png Graphic file (type png
+)
+<use Question 4 - Scatter Plot with regression line.png>
+Package pdftex.def Info: Question 4 - Scatter Plot with regression line.png  us
+ed on input line 143.
+(pdftex.def)             Requested size: 310.4979pt x 244.70193pt.
+[6 <./Question3 - Scatter Plot with regression line.png>] [7 <./Question4Regres
+sionAnalysis.jpg> <./Question 4 - Scatter Plot with regression line.png>]
+<Question5RegressionAnalysis.jpg, id=43, 383.63326pt x 220.4235pt>
+File: Question5RegressionAnalysis.jpg Graphic file (type jpg)
+<use Question5RegressionAnalysis.jpg>
+Package pdftex.def Info: Question5RegressionAnalysis.jpg  used on input line 15
+8.
+(pdftex.def)             Requested size: 310.4979pt x 178.40414pt.
+
+[8 <./Question5RegressionAnalysis.jpg>] (PS3.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -185,10 +221,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1420 strings out of 474485
- 24969 string characters out of 5742318
+ 1441 strings out of 474485
+ 25897 string characters out of 5742318
  1930542 words of memory out of 5000000
- 23740 multiletter control sequences out of 15000+600000
+ 23761 multiletter control sequences out of 15000+600000
  562324 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,711b,236s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -201,9 +237,9 @@ al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/diarmuid/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/User
 s/diarmuid/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb>
-Output written on PS3.pdf (6 pages, 365020 bytes).
+Output written on PS3.pdf (8 pages, 530125 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

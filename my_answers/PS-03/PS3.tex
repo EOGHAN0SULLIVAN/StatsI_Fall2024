@@ -2,7 +2,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \title{Applied Statistical Analysis - ProblemSet 3}
-\date{2024-11-11}
+\date{2024-11-12}
 \author{Eoghan O'Sullivan}
 
 \begin{document}
@@ -52,7 +52,7 @@
 		\end{equation}
 	\section{Question 2}
 
-	For this question, I formulated a research question: "Do campaign spending differences affect presvote?". At the same time, I used R scripting as the statistical method of analysis. The variables were provided in the brief. These were difflog and presvote, from provided data. The explanatory variable, difflog, is used in the regression analysis as is the outcome variable, presvote. I produced a regression analysis and below are the results of the analysis.   
+	For this question, I formulated a research question: "do campaign spending differences affect presvote?". At the same time, I used R scripting as the statistical method of analysis. The variables were provided in the brief. These were difflog and presvote, from provided data. The explanatory variable, difflog, is used in the regression analysis as is the outcome variable, presvote. I produced a regression analysis and below are the results of the analysis.   
 \subsection{Part 1}
 \paragraph{Run a regression where the outcome variable is presvote and the explanatory variable is difflog.}
 The results of this regression are in figure 3.
@@ -89,7 +89,7 @@ I wrote the prediction equation as follows, having calculated the intercept as
 \end{equation}
 \section{Question 3}
 
-For this question, I formulated a research question: "How does the incumbent President's party vote share affect his/her electoral success?". The variables were provided in the brief. These were presvote and voteshare, from provided data. The explanatory variable, presvote, is used in the regression analysis as is the outcome variable, voteshare. I produced a regression analysis after determining that the dependent variable follows a normal distribution by showing a bell-shaped curve in a histogram, which I plotted and reviewed. Given it was bell-shaped, I proceeded with a linear regression and below are the results of the analysis.   
+For this question, I formulated a research question: "how does the incumbent President's party vote share affect his/her electoral success?". The variables were provided in the brief. These were presvote and voteshare, from provided data. The explanatory variable, presvote, is used in the regression analysis as is the outcome variable, voteshare. I produced a regression analysis after determining that the dependent variable follows a normal distribution by showing a bell-shaped curve in a histogram, which I plotted and reviewed. Given it was bell-shaped, I proceeded with a linear regression and below are the results of the analysis.   
 \subsection{Part 1}
 \paragraph{Run a regression where the outcome variable is voteshare and the explanatory variable is presvote.}
 The results of this regression are in figure 5.
@@ -101,7 +101,7 @@ The results of this regression are in figure 5.
 \end{figure}
 \subsection{Part 2}
 \paragraph{Make a scatterplot of the two variables and add the regression line.}
-I was confident the scatter plot showed a a straight line and I then fitted a linear model and proceeded to draw the regression line. Below in figure 6 is the resulting graph. To fit the model, I again used the lm function. I created an object called lm\_model. To draw the line I used this object with the abline function for drawing the line and coloured it in red.
+I was confident the scatter plot showed a straight line and I then fitted a linear model and proceeded to draw the regression line. Overleaf in figure 6 is the resulting graph. To fit the model, I again used the lm function. I created an object called lm\_model. To draw the line I used this object with the abline function for drawing the line and coloured it in red.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Question3 - Scatter Plot with regression line.png}
@@ -124,4 +124,42 @@ I wrote the prediction equation as follows, having calculated the intercept as
 \begin{equation}
 	\hat{y} = 0.441 + 0.388 * presvote
 \end{equation}
+	\section{Question 4}
+This question I approached by using previously calculated residuals.
+\subsection{Part 1}
+\paragraph{Run a regression where the outcome variable is the residuals from Question 1 and the explanatory variable is the residuals from Question 2.}
+The results of this regression analysis are below in figure 7. 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.9\linewidth]{Question4RegressionAnalysis.jpg}
+\caption{Regression statistics.}
+\label{fig:Regression statistics}
+\end{figure}
+\subsection{Part 2}
+\paragraph{Make a scatterplot of the two residuals and add the regression line.}
+I approached this by using the lm function in R and wrote as arguments the residuals from questions 1 and 2 and the data itself. The graph in figure 8 refers.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Question 4 - Scatter Plot with regression line.png}
+	\caption{Scatter plot with regression line.}
+	\label{fig:Scatter plot with regression line}
+\end{figure}
+
+
+
+	\section{Question 5}
+
+For this question, I formulated a research question: "Is the incumbent's voteshare affected by both the president's popularity and spending differences?". At the same time, I used R scripting as the statistical method of analysis. The variables were provided in the brief. These were difflog, voteshare and presvote from provided data. The explanatory variables, presvote and difflog, are used in the regression analysis as is the outcome variable, voteshare. I reviewed assumptions and I proceeded with a multivariate regression and below are the results of the analysis.   
+\subsection{Part 1}
+\paragraph{Run a regression where the outcome variable is the incumbent's voteshare and the explanatory variables are difflog and presvote.}
+For this part, I used the lm function in R and created a summary from that object.  The results of this regression are in figure 9.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Question5RegressionAnalysis.jpg}
+	\caption{Regression statistics.}
+	\label{fig:Regression stats}
+\end{figure}
+\subsection{Part 2}
+\paragraph{Write the prediction equation.}
+I wrote the prediction equation as 0.449 + 0.257 * difflog + 0.036 * presvote
 \end{document}
